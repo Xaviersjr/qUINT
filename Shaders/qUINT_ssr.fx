@@ -30,7 +30,7 @@ uniform float SSR_FIELD_OF_VIEW <
 	ui_label = "Vertical Field of View";
 	ui_tooltip = "Vertical FoV, should match camera FoV but since ReShade's\ndepth linearization is not always precise, this value\nmight differ from the actual value. Just set to what looks best.";
 	ui_category = "Global";
-> = 50.0;
+> = 80.0;
 
 uniform float SSR_REFLECTION_INTENSITY <
 	ui_type = "drag";
@@ -38,7 +38,7 @@ uniform float SSR_REFLECTION_INTENSITY <
 	ui_label = "Reflection Intensity";
 	ui_tooltip = "Amount of reflection.";
 	ui_category = "Global";
-> = 1.0;
+> = 2.0;
 
 uniform float SSR_FRESNEL_EXP <
 	ui_type = "drag";
@@ -54,7 +54,7 @@ uniform float SSR_FADE_DIST <
 	ui_label = "Fade Distance";
 	ui_tooltip = "Distance where reflection is completely faded out.\n1 means infinite distance.";
 	ui_category = "Global";
-> = 0.8;
+> = 0.9;
 
 uniform float SSR_RAY_INC <
 	ui_type = "drag";
